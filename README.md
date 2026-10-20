@@ -15,7 +15,13 @@ Orbit ne fournit aucune chaîne : il lit les accès de ton fournisseur (Xtream C
 - Interface pensée pour la télécommande sur Android TV (contour ambre sur l'élément sélectionné)
 - Liste des chaînes gardée en cache : ouverture instantanée, bouton « Actualiser » pour recharger
 
-## Obtenir l'APK sans rien installer (depuis ton téléphone)
+## Télécharger l'APK
+
+Chaque modification envoyée sur `main` recompile l'APK et le publie ici (lien direct, toujours la dernière version) :
+
+**https://github.com/tanguyen31/OrbIPTV/releases/latest/download/OrbitIPTV.apk**
+
+## Recompiler depuis zéro sur un autre dépôt
 
 1. Crée un compte sur **github.com** si tu n'en as pas.
 2. Crée un nouveau dépôt (bouton **+** puis **New repository**), privé si tu préfères.
