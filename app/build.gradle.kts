@@ -16,13 +16,22 @@ android {
         versionName = "2.0"
     }
 
+    signingConfigs {
+        create("orbit") {
+            // Clé fixe : les mises à jour s'installent par-dessus la version précédente.
+            storeFile = file("orbit-release.jks")
+            storePassword = "orbitiptv"
+            keyAlias = "orbit"
+            keyPassword = "orbitiptv"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            // Signé avec la clé de debug pour pouvoir l'installer directement.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("orbit")
         }
     }
 
