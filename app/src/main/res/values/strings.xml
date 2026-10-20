@@ -1,37 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Orbit IPTV</string>
-    <string name="brand">Orbit</string>
-
-    <string name="tab_live">TV en direct</string>
-    <string name="tab_movies">Films</string>
-    <string name="tab_favorites">Favoris</string>
-    <string name="search_hint">Rechercher une chaîne ou un film</string>
-    <string name="all_categories">Toutes</string>
-    <string name="refresh">Actualiser</string>
-    <string name="settings">Changer de source</string>
-    <string name="loading_channels">Chargement des chaînes…</string>
-    <string name="empty_list">Aucun résultat</string>
-    <string name="empty_favorites">Aucun favori pour l\'instant.\nFais un appui long sur une chaîne pour l\'ajouter.</string>
-    <string name="load_error">Chargement impossible : %1$s\nVérifie ta source avec le bouton réglages.</string>
-    <string name="fav_added">Ajouté aux favoris</string>
-    <string name="fav_removed">Retiré des favoris</string>
-
-    <string name="setup_title">Ajoute ta source</string>
-    <string name="setup_subtitle">Orbit est un lecteur : il ne fournit aucune chaîne. Saisis les accès donnés par ton fournisseur IPTV.</string>
-    <string name="mode_xtream">Xtream Codes</string>
-    <string name="mode_m3u">Lien M3U</string>
-    <string name="hint_server">Adresse du serveur (ex. http://exemple.com:8080)</string>
-    <string name="hint_user">Nom d\'utilisateur</string>
-    <string name="hint_pass">Mot de passe</string>
-    <string name="hint_m3u">URL de la playlist M3U</string>
-    <string name="connect">Se connecter</string>
-    <string name="error_required">Champ obligatoire</string>
-    <string name="error_no_channels">Aucune chaîne trouvée dans cette source.</string>
-    <string name="error_generic">Connexion impossible : %1$s</string>
-
-    <string name="play_error">Impossible de lire ce flux.</string>
-    <string name="previous">Chaîne précédente</string>
-    <string name="next">Chaîne suivante</string>
-    <string name="favorite">Favori</string>
 </resources>

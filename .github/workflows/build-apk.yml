@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build:
@@ -23,7 +24,18 @@ jobs:
       - name: Compiler
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon assembleRelease
+          set -o pipefail
+          ./gradlew --no-daemon assembleRelease 2>&1 | tee build.log
+
+      # En cas d'échec, les erreurs sont publiées dans un ticket du dépôt.
+      - name: Signaler l'échec
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          grep -E "^e: |error:|What went wrong|Execution failed|Could not|Unresolved|Missing class" -A4 build.log | head -200 > errors.txt || true
+          [ -s errors.txt ] || tail -150 build.log > errors.txt
+          gh issue create --title "Échec de compilation ${GITHUB_SHA::7}" --body-file errors.txt
 
       - name: Renommer l'APK
         run: cp app/build/outputs/apk/release/app-release.apk OrbitIPTV.apk
