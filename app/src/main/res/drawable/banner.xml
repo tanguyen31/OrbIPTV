@@ -1,0 +1,16 @@
+<!-- Bannière affichée sur l'écran d'accueil Android TV (320 x 180). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp" android:height="180dp"
+    android:viewportWidth="320" android:viewportHeight="180">
+    <path android:fillColor="#0B0F17" android:pathData="M0,0h320v180h-320z" />
+    <path android:fillColor="#141A25" android:pathData="M0,120h320v60h-320z" />
+    <path
+        android:pathData="M90,52a38,38 0,1 1,0 76a38,38 0,1 1,0 -76z"
+        android:strokeWidth="7"
+        android:strokeColor="#FFB547"
+        android:fillColor="#00000000" />
+    <path android:fillColor="#ECEFF5" android:pathData="M80,70L109,90L80,110Z" />
+    <path android:fillColor="#FFB547" android:pathData="M124,48a7,7 0,1 1,0 14a7,7 0,1 1,0 -14z" />
+    <path android:fillColor="#ECEFF5" android:pathData="M152,72h120a6,6 0,0 1,0 12h-120a6,6 0,0 1,0 -12z" />
+    <path android:fillColor="#8B95A7" android:pathData="M152,96h80a4,4 0,0 1,0 8h-80a4,4 0,0 1,0 -8z" />
+</vector>
